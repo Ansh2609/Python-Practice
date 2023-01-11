@@ -1,0 +1,20 @@
+import unittest
+'''
+Write a recursive factorial function. Then, write FIVE
+test cases for the output. Two test cases should be edge
+cases.
+'''
+
+def factorial(num):
+    if num == 0:
+        return 0
+    else:
+        return num + factorial(num-1)
+
+class FacTest(unittest.TestCase):
+    def TestCase1(self):
+        self.assertEqual(factorial[5],120)
+    def Testcase2(self):
+        self.assertEqual(factorial[3],6)
+if __name__ == "__main__":
+    unittest.main(exit=True)
